@@ -1,0 +1,1203 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgba(35, 107, 116, 0.053);
+    color: grey;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header-section{
+    background:url("images/header-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(232, 255, 237);
+    text-transform: uppercase;
+    font-size: 180%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.header-section-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(48, 105, 124, 0.811);
+}
+.header-section button{
+    margin-top: 3%;
+    padding: .5%;
+    font-size: 120%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(19, 75, 88);
+}
+.header-section button a{
+    text-decoration: none;
+    color: honeydew;
+}
+.time-script{
+    background-color: rgba(19, 75, 88, 0.653);
+    color: honeydew;
+    font-size: 140%;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section{
+    height: 100vh;
+}
+.about-section-info{
+    display: flex;
+}
+.about-section-text{
+    font-size: 120%;
+    height: 90vh;
+    line-height: 200%;
+    flex: 50%;
+    background-color: rgb(221, 231, 240);
+    text-align: center;
+}
+.about-section-text a{
+    color: rgb(11, 158, 192);
+}
+.about-section-text h1, .about-section-text p{
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.about-section-photo{
+    flex: 50%;
+    background-color: aliceblue;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section-photo img{
+    height: 400px;
+    border-radius: 40px;
+}
+.course-section{
+    height: 100vh;
+    background-color: rgba(19, 75, 88, 0.653);
+}
+.course-section-info{
+    padding-top: 3%;
+    padding-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.course-block{
+    height: 650px;
+    width: 375px;
+    background-color: rgb(221, 231, 240);
+    border-radius: 7px;
+}
+.course-block a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    padding:3%;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: rgb(238, 247, 238);
+    margin-left: 35%;
+    margin-right: 45%;
+    font-size: 130%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: rgb(19, 75, 88);
+}
+.course-img{
+    width: 375px;
+    height: 250px;
+    background-color: black;
+    border-radius: 7px 7px 0px 0px;
+}
+.course-title, .course-price{
+    text-shadow: grey 0px 0px 2px;
+    text-align: center;
+    padding: 1%;
+    font-weight: bolder;
+    font-size: 180%;
+}
+.course-description{
+    font-size: 110%;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+/* This is the CSS code styling for the navigation menu section.
+more notes are on the HTML index sheet */
+.navigation{
+    display:block;
+    position:fixed;
+    height: 45vh;
+    transform: translate(10px,200px);
+    background-color: rgba(19, 75, 88, 0.653);
+}
+.navigation ul{
+    text-align: center;
+    list-style-type: none;
+}
+.navigation ul li{
+    height: 10vh;
+    margin: 20px;
+}
+.navigation ul li a svg{
+    font-size: 2.3em;
+    fill: honeydew;
+}
+/* Contact Section*/
+.contact-section{
+    height: 95vh;
+    background: rgb(19, 75, 88);
+}
+.contact-body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.map iframe{
+    width: 600px;
+}
+form{
+    width: 30vw;
+    padding: 3em;
+    margin: 0 auto;
+}
+input,textarea{
+    width: 100%;
+    margin:1em 0 0 0;
+    min-height: 2em;
+    outline: none;
+    font-size: 1.1rem;
+    margin: 1em;
+    color:honeydew;
+    border: none;
+    border-bottom: solid 1px rgb(240, 242, 243);
+    background:none;
+}
+input::placeholder,textarea::placeholder{
+    color: rgb(187, 255, 187);
+}
+input[type="submit"]{
+    width: 40%;
+    border: solid .5px rgb(240, 242, 243);
+    cursor: pointer;
+    float: right;
+    border-radius: 3px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(187, 255, 187);
+    color: rgb(19, 75, 88);
+}
+/* Enroll Section*/
+.enrollment-section{
+    height: 100vh;
+    background: rgb(19, 75, 88);
+}
+.enrollment-section-onboarding{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:75%;
+}
+.enrollment-form{
+    color: honeydew;
+}
+/* Footer Section */
+footer{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+}
+footer a{
+    color: rgb(19, 75, 88);
+    text-decoration: none;
+}
+/* Here I am beginning the MOBILE View designing for the different Elements for PHONE, TABLET, LAPTOP and DESKTOP*/
+/* Two sections will split up the styling sheet
+
+Section 1: Laptop and Desktop View
+
+Section 2: Tablet and Phone View */
+
+/*Section 1*/
+/*Desktop View*/
+@media  screen and (min-width:1024px) and (max-width:1200px) {
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        background: rgba(35, 107, 116, 0.053);
+        color: grey;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .header-section{
+        background:url("images/header-bg.jpeg");
+        background-size: cover;
+        background-position: center;
+        color: rgb(232, 255, 237);
+        text-transform: uppercase;
+        font-size: 180%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+    .header-section-intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;text-align: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(48, 105, 124, 0.811);
+    }
+    .header-section button{
+        margin-top: 3%;
+        padding: .5%;
+        font-size: 120%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-transform: uppercase;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 3px;
+        border: none;
+        background-color: rgb(19, 75, 88);
+    }
+    .header-section button a{
+        text-decoration: none;
+        color: honeydew;
+    }
+    .time-script{
+        background-color: rgba(19, 75, 88, 0.653);
+        color: honeydew;
+        font-size: 140%;
+        text-align: center;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section{
+        height: 100vh;
+    }
+    .about-section-info{
+        display: flex;
+    }
+    .about-section-text{
+        font-size: 120%;
+        height: 90vh;
+        line-height: 200%;
+        flex: 50%;
+        background-color: rgb(221, 231, 240);
+        text-align: center;
+    }
+    .about-section-text a{
+        color: rgb(11, 158, 192);
+    }
+    .about-section-text h1, .about-section-text p{
+        padding-top: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .about-section-photo{
+        flex: 50%;
+        background-color: aliceblue;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section-photo img{
+        height: 400px;
+        border-radius: 40px;
+    }
+    .course-section{
+        height: 100vh;
+        background-color: rgba(19, 75, 88, 0.653);
+    }
+    .course-section-info{
+        padding-top: 3%;
+        padding-left: 2%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .course-block{
+        height: 650px;
+        width: 375px;
+        background-color: rgb(221, 231, 240);
+        border-radius: 7px;
+    }
+    .course-block a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7%;
+        padding:3%;
+        padding-left: 15%;
+        padding-right: 15%;
+        background-color: rgb(238, 247, 238);
+        margin-left: 35%;
+        margin-right: 45%;
+        font-size: 130%;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        color: rgb(19, 75, 88);
+    }
+    .course-img{
+        width: 375px;
+        height: 250px;
+        background-color: black;
+        border-radius: 7px 7px 0px 0px;
+    }
+    .course-title, .course-price{
+        text-shadow: grey 0px 0px 2px;
+        text-align: center;
+        padding: 1%;
+        font-weight: bolder;
+        font-size: 180%;
+    }
+    .course-description{
+        font-size: 110%;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    /* This is the CSS code styling for the navigation menu section.
+    more notes are on the HTML index sheet */
+    .navigation{
+        display:block;
+        position:fixed;
+        height: 45vh;
+        transform: translate(10px,200px);
+        background-color: rgba(19, 75, 88, 0.653);
+    }
+    .navigation ul{
+        text-align: center;
+        list-style-type: none;
+    }
+    .navigation ul li{
+        height: 10vh;
+        margin: 20px;
+    }
+    .navigation ul li a svg{
+        font-size: 2.3em;
+        fill: honeydew;
+    }
+    /* Contact Section*/
+    .contact-section{
+        height: 95vh;
+        background: rgb(19, 75, 88);
+    }
+    .contact-body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    form{
+        width: 30vw;
+        padding: 3em;
+        margin: 0 auto;
+    }
+    input,textarea{
+        width: 100%;
+        margin:1em 0 0 0;
+        min-height: 2em;
+        outline: none;
+        font-size: 1.1rem;
+        margin: 1em;
+        color:honeydew;
+        border: none;
+        border-bottom: solid 1px rgb(240, 242, 243);
+        background:none;
+    }
+    input::placeholder,textarea::placeholder{
+        color: rgb(187, 255, 187);
+    }
+    input[type="submit"]{
+        width: 40%;
+        border: solid .5px rgb(240, 242, 243);
+        cursor: pointer;
+        float: right;
+        border-radius: 3px;
+    }
+    input[type="submit"]:hover{
+        background-color: rgb(187, 255, 187);
+        color: rgb(19, 75, 88);
+    }
+    /* Enroll Section*/
+    .enrollment-section{
+        height: 100vh;
+        background: rgb(19, 75, 88);
+    }
+    .enrollment-section-onboarding{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:75%;
+    }
+    .enrollment-form{
+        color: honeydew;
+    }
+    /* Footer Section */
+    footer{
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 22px;
+    }
+    footer a{
+        color: rgb(19, 75, 88);
+        text-decoration: none;
+    }
+}
+
+/* Laptop View */
+@media screen and (min-width: 769px) and  (max-width:1023px){
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        background: rgba(35, 107, 116, 0.053);
+        color: grey;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .header-section{
+        background:url("images/header-bg.jpeg");
+        background-size: cover;
+        background-position: center;
+        color: rgb(232, 255, 237);
+        text-transform: uppercase;
+        font-size: 180%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+    .header-section-intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;text-align: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(48, 105, 124, 0.811);
+    }
+    .header-section button{
+        margin-top: 3%;
+        padding: .5%;
+        font-size: 120%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-transform: uppercase;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 3px;
+        border: none;
+        background-color: rgb(19, 75, 88);
+    }
+    .header-section button a{
+        text-decoration: none;
+        color: honeydew;
+    }
+    .time-script{
+        background-color: rgba(19, 75, 88, 0.653);
+        color: honeydew;
+        font-size: 140%;
+        text-align: center;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section{
+        height: 100vh;
+    }
+    .about-section-info{
+        display: flex;
+    }
+    .about-section-text{
+        font-size: 120%;
+        height: 90vh;
+        line-height: 200%;
+        flex: 50%;
+        background-color: rgb(221, 231, 240);
+        text-align: center;
+    }
+    .about-section-text a{
+        color: rgb(11, 158, 192);
+    }
+    .about-section-text h1, .about-section-text p{
+        padding-top: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .about-section-photo{
+        flex: 50%;
+        background-color: aliceblue;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section-photo img{
+        height: 400px;
+        border-radius: 40px;
+    }
+    .course-section{
+        height: 100vh;
+        background-color: rgba(19, 75, 88, 0.653);
+    }
+    .course-section-info{
+        padding-top: 3%;
+        padding-left: 2%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .course-block{
+        height: 650px;
+        width: 375px;
+        background-color: rgb(221, 231, 240);
+        border-radius: 7px;
+    }
+    .course-block a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7%;
+        padding:3%;
+        padding-left: 15%;
+        padding-right: 15%;
+        background-color: rgb(238, 247, 238);
+        margin-left: 35%;
+        margin-right: 45%;
+        font-size: 130%;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        color: rgb(19, 75, 88);
+    }
+    .course-img{
+        width: 375px;
+        height: 250px;
+        background-color: black;
+        border-radius: 7px 7px 0px 0px;
+    }
+    .course-title, .course-price{
+        text-shadow: grey 0px 0px 2px;
+        text-align: center;
+        padding: 1%;
+        font-weight: bolder;
+        font-size: 180%;
+    }
+    .course-description{
+        font-size: 110%;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    /* This is the CSS code styling for the navigation menu section.
+    more notes are on the HTML index sheet */
+    .navigation{
+        display:block;
+        position:fixed;
+        height: 45vh;
+        transform: translate(10px,200px);
+        background-color: rgba(19, 75, 88, 0.653);
+    }
+    .navigation ul{
+        text-align: center;
+        list-style-type: none;
+    }
+    .navigation ul li{
+        height: 10vh;
+        margin: 20px;
+    }
+    .navigation ul li a svg{
+        font-size: 2.3em;
+        fill: honeydew;
+    }
+    /* Contact Section*/
+    .contact-section{
+        height: 95vh;
+        background: rgb(19, 75, 88);
+    }
+    .contact-body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    form{
+        width: 30vw;
+        padding: 3em;
+        margin: 0 auto;
+    }
+    input,textarea{
+        width: 100%;
+        margin:1em 0 0 0;
+        min-height: 2em;
+        outline: none;
+        font-size: 1.1rem;
+        margin: 1em;
+        color:honeydew;
+        border: none;
+        border-bottom: solid 1px rgb(240, 242, 243);
+        background:none;
+    }
+    input::placeholder,textarea::placeholder{
+        color: rgb(187, 255, 187);
+    }
+    input[type="submit"]{
+        width: 40%;
+        border: solid .5px rgb(240, 242, 243);
+        cursor: pointer;
+        float: right;
+        border-radius: 3px;
+    }
+    input[type="submit"]:hover{
+        background-color: rgb(187, 255, 187);
+        color: rgb(19, 75, 88);
+    }
+    /* Enroll Section*/
+    .enrollment-section{
+        height: 100vh;
+        background: rgb(19, 75, 88);
+    }
+    .enrollment-section-onboarding{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:75%;
+    }
+    .enrollment-form{
+        color: honeydew;
+    }
+    /* Footer Section */
+    footer{
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 22px;
+    }
+    footer a{
+        color: rgb(19, 75, 88);
+        text-decoration: none;
+    }
+}
+/*Section 2*/
+/*Tablet View*/
+@media screen and (min-width:481px) and (max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        background: rgba(35, 107, 116, 0.053);
+        color: grey;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .header-section{
+        background:url("images/header-bg.jpeg");
+        background-size: cover;
+        background-position: center;
+        color: rgb(232, 255, 237);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        
+    }
+    .header-section-intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;text-align: center;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(48, 105, 124, 0.811);
+    }
+    .header-section button{
+        margin-top: 10%;
+        padding: .5%;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-transform: uppercase;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 3px;
+        border: none;
+        background-color: rgb(19, 75, 88);
+    }
+    .header-section button a{
+        text-decoration: none;
+        color: honeydew;
+    }
+    .time-script{
+        background-color: rgba(19, 75, 88, 0.653);
+        color: honeydew;
+        font-size: 140%;
+        text-align: center;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section{
+        height: 120vh;
+        width: 100%;
+    }
+    .about-section-info{
+        display: block;
+    }
+    .about-section-text{
+        font-size: 20px;
+        height: 50vh;
+        line-height: 140%;
+        flex: 50%;
+        background-color: rgb(221, 231, 240);
+        text-align: center;
+    }
+    .about-section-text a{
+        color: rgb(11, 158, 192);
+    }
+    .about-section-text h1, .about-section-text p{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .about-section-photo{
+        flex: 50%;
+        background-color: aliceblue;
+        height: 0vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section-photo img{
+        height: 200px;
+        border-radius: 40px;
+    }
+    .course-section{
+        height: 100vh;
+        background-color: rgba(19, 75, 88, 0.653);
+    }
+    .course-section-info{
+        padding-top: 3%;
+        padding-left: 2%;
+        display: block;
+    }
+    .course-block{
+        height: 250px;
+        width: 450px;
+        background-color: rgb(221, 231, 240);
+        border-radius: 7px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    .course-block hr{
+        display: none;
+    }
+    .course-block a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+        padding:1%;
+        background-color: rgb(238, 247, 238);
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        color: rgb(19, 75, 88);
+    }
+    .course-img{
+        display: none;
+    }
+    .course-title, .course-price{
+        text-shadow: grey 0px 0px 2px;
+        text-align: center;
+        padding: 1%;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    .course-description{
+        font-size: 15px;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    /* This is the CSS code styling for the navigation menu section.
+    more notes are on the HTML index sheet */
+    .navigation{
+        display:block;
+        position:fixed;
+        height: 45vh;
+        transform: translate(10px,200px);
+        background-color: rgba(19, 75, 88, 0.653);
+    }
+    .navigation ul{
+        text-align: center;
+        list-style-type: none;
+    }
+    .navigation ul li{
+        height: 10vh;
+        margin: 20px;
+    }
+    .navigation ul li a svg{
+        font-size: 2.3em;
+        fill: honeydew;
+    }
+    /* Contact Section*/
+    .contact-section{
+        height: 95vh;
+        background: rgb(19, 75, 88);
+        overflow: scroll;
+    }
+    .contact-body{
+        height: 100vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .map iframe{
+        width: 550px;
+        margin-left: 115px;
+    }
+    form{
+        width: 70vw;
+        padding: 1em;
+        margin: 0 auto;
+    }
+    input,textarea{
+        width: 100%;
+        margin:1em 0 0 0;
+        min-height: 2em;
+        outline: none;
+        font-size: .7rem;
+        margin: .4em;
+        color:honeydew;
+        border: none;
+        border-bottom: solid 1px rgb(240, 242, 243);
+        background:none;
+    }
+    input::placeholder,textarea::placeholder{
+        color: rgb(187, 255, 187);
+    }
+    input[type="submit"]{
+        width: 40%;
+        border: solid .5px rgb(240, 242, 243);
+        cursor: pointer;
+        float: right;
+        border-radius: 3px;
+    }
+    input[type="submit"]:hover{
+        background-color: rgb(187, 255, 187);
+        color: rgb(19, 75, 88);
+    }
+    /* Enroll Section*/
+    .enrollment-section{
+        height: 100vh;
+        background: rgb(19, 75, 88);
+    }
+    .enrollment-section-onboarding{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:75%;
+    }
+    .enrollment-form{
+        color: honeydew;
+    }
+    /* Footer Section */
+    footer{
+        height: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+    footer a{
+        color: rgb(19, 75, 88);
+        text-decoration: none;
+    }
+}
+/*Phone View*/
+@media screen and (min-width:320px) and (max-width:480px){
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        background: rgba(35, 107, 116, 0.053);
+        color: grey;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .header-section{
+        background:url("images/header-bg.jpeg");
+        background-size: cover;
+        background-position: center;
+        color: rgb(232, 255, 237);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        
+    }
+    .header-section-intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;text-align: center;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(48, 105, 124, 0.811);
+    }
+    .header-section button{
+        margin-top: 10%;
+        padding: .5%;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-transform: uppercase;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 3px;
+        border: none;
+        background-color: rgb(19, 75, 88);
+    }
+    .header-section button a{
+        text-decoration: none;
+        color: honeydew;
+    }
+    .time-script{
+        background-color: rgba(19, 75, 88, 0.653);
+        color: honeydew;
+        font-size: 140%;
+        text-align: center;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section{
+        height: 100vh;
+        width: 100%;
+    }
+    .about-section-info{
+        display: block;
+    }
+    .about-section-text{
+        font-size: 16px;
+        height: 50vh;
+        line-height: 150%;
+        flex: 50%;
+        background-color: rgb(221, 231, 240);
+        text-align: center;
+    }
+    .about-section-text a{
+        color: rgb(11, 158, 192);
+    }
+    .about-section-text h1, .about-section-text p{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .about-section-photo{
+        flex: 50%;
+        background-color: aliceblue;
+        height: 0vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section-photo img{
+        height: 200px;
+        border-radius: 40px;
+    }
+    .course-section{
+        height: 100vh;
+        background-color: rgba(19, 75, 88, 0.653);
+    }
+    .course-section-info{
+        padding-top: 3%;
+        padding-left: 2%;
+        display: block;
+    }
+    .course-block{
+        height: 250px;
+        width: 275px;
+        background-color: rgb(221, 231, 240);
+        border-radius: 7px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    .course-block hr{
+        display: none;
+    }
+    .course-block a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+        padding:1%;
+        background-color: rgb(238, 247, 238);
+        margin-left: 35%;
+        margin-right: 35%;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        color: rgb(19, 75, 88);
+    }
+    .course-img{
+        display: none;
+    }
+    .course-title, .course-price{
+        text-shadow: grey 0px 0px 2px;
+        text-align: center;
+        padding: 1%;
+        font-weight: bolder;
+        font-size: 16px;
+    }
+    .course-description{
+        font-size: 13px;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    /* This is the CSS code styling for the navigation menu section.
+    more notes are on the HTML index sheet */
+    .navigation{
+        display:block;
+        position:fixed;
+        height: 45vh;
+        transform: translate(10px,200px);
+        background-color: rgba(19, 75, 88, 0.653);
+    }
+    .navigation ul{
+        text-align: center;
+        list-style-type: none;
+    }
+    .navigation ul li{
+        height: 10vh;
+        margin: 20px;
+    }
+    .navigation ul li a svg{
+        font-size: 2.3em;
+        fill: honeydew;
+    }
+    /* Contact Section*/
+    .contact-section{
+        height: 95vh;
+        background: rgb(19, 75, 88);
+        overflow: hidden;
+    }
+    .contact-body{
+        height: 100vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    form{
+        width: 70vw;
+        padding: 1em;
+        margin: 0 auto;
+    }
+    input,textarea{
+        width: 100%;
+        margin:1em 0 0 0;
+        min-height: 2em;
+        outline: none;
+        font-size: .7rem;
+        margin: .4em;
+        color:honeydew;
+        border: none;
+        border-bottom: solid 1px rgb(240, 242, 243);
+        background:none;
+    }
+    input::placeholder,textarea::placeholder{
+        color: rgb(187, 255, 187);
+    }
+    input[type="submit"]{
+        width: 40%;
+        border: solid .5px rgb(240, 242, 243);
+        cursor: pointer;
+        float: right;
+        border-radius: 3px;
+    }
+    input[type="submit"]:hover{
+        background-color: rgb(187, 255, 187);
+        color: rgb(19, 75, 88);
+    }
+    /* Enroll Section*/
+    .enrollment-section{
+        height: 100vh;
+        background: rgb(19, 75, 88);
+    }
+    .enrollment-section-onboarding{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:75%;
+    }
+    .enrollment-form{
+        color: honeydew;
+    }
+    /* Footer Section */
+    footer{
+        height: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+    footer a{
+        color: rgb(19, 75, 88);
+        text-decoration: none;
+    }
+}
